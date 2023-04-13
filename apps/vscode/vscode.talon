@@ -21,6 +21,7 @@ bar extensions: user.vscode("workbench.view.extensions")
 bar outline: user.vscode("outline.focus")
 bar run: user.vscode("workbench.view.debug")
 bar search: user.vscode("workbench.view.search")
+search results: user.vscode("search.action.focusNextSearchResult")
 bar source: user.vscode("workbench.view.scm")
 bar test: user.vscode("workbench.view.testing.focus")
 bar switch: user.vscode("workbench.action.toggleSidebarVisibility")
@@ -93,6 +94,9 @@ file delete:
 file open folder: user.vscode("revealFileInOS")
 file reveal: user.vscode("workbench.files.action.showActiveFileInExplorer")
 save ugly: user.vscode("workbench.action.files.saveWithoutFormatting")
+save: user.vscode("workbench.action.files.save")
+file minimize: user.vscode("workbench.files.action.collapseExplorerFolders")
+folder new: user.vscode("explorer.newFolder")
 
 # Language Features
 suggest show: user.vscode("editor.action.triggerSuggest")
@@ -140,6 +144,7 @@ close other tabs: user.vscode("workbench.action.closeOtherEditors")
 close all tabs: user.vscode("workbench.action.closeAllEditors")
 close tabs way right: user.vscode("workbench.action.closeEditorsToTheRight")
 close tabs way left: user.vscode("workbench.action.closeEditorsToTheLeft")
+tab keep: user.vscode("workbench.action.keepEditor")
 
 # Folding
 fold that: user.vscode("editor.fold")
