@@ -1,5 +1,5 @@
 os: mac
-and app: Outlook
+and app: outlook_mac
 -
 mail:
     key(cmd-1)
@@ -37,3 +37,26 @@ mail reply all:
 mail forward:
     key(cmd-j)
 
+mail window:
+    key(cmd-o)
+
+mail next:
+    key(ctrl-])
+
+mail last:
+    key(ctrl-[)
+
+pane last:
+    key(shift-ctrl-[)
+
+pane next:
+    key(shift-ctrl-])
+
+mail move:
+    key(shift-cmd-m)
+
+mail unread:
+    key(shift-cmd-o)
+
+mail all read:
+    key(alt-cmd-t)
