@@ -18,3 +18,6 @@ scratch:
 search:
     key(cmd-f)
 
+screen lock:
+    key(ctrl-cmd-q)
+
