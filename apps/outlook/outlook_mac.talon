@@ -13,7 +13,7 @@ contacts:
 open:
     key(cmd-o)
 
-find:
+search:
     key(cmd-f)
 
 mail new:
@@ -55,8 +55,14 @@ pane next:
 mail move:
     key(shift-cmd-m)
 
-mail unread:
+filter unread:
     key(shift-cmd-o)
+
+mail read:
+    key(cmd-t)
+
+mail unread:
+    key(shift-cmd-t)
 
 mail all read:
     key(alt-cmd-t)
