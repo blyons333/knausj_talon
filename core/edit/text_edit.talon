@@ -15,3 +15,6 @@ text link:
 scratch:
     key(backspace)
 
+search:
+    key(cmd-f)
+
