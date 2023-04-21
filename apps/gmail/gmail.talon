@@ -1,6 +1,6 @@
 os: mac
 and app.bundle: com.google.Chrome
-and title: /Gmail/
+and title: /mail.google.com/
 -
 mess last: key(p)
 mess next: key(n)
@@ -24,8 +24,14 @@ mail: key(u)
 mail last: key(k)
 mail next: key(j)
 mail open: key(o)
-pane next: key(g-n)
-pane last: key(g-p)
+pane next: key(g n)
+pane last: key(g p)
 search: key(/)
 mail new: key(c)
 mail move: key(v)
+go label [<user.text>]:
+	key(g l)
+	sleep(50ms)
+	insert(text or "")
+	sleep(250ms)
+go inbox: key(g i)

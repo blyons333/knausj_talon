@@ -140,6 +140,12 @@ go recent [<user.text>]:
     sleep(250ms)
 go edit: user.vscode("workbench.action.navigateToLastEditLocation")
 go line: user.vscode("workbench.action.gotoLine")
+go line <user.number_string>:
+    user.vscode("workbench.action.gotoLine")
+    sleep(50ms)
+    insert(number_string)
+    sleep(250ms)
+    key(enter)
 
 # Bookmarks. Requires Bookmarks plugin
 go marks: user.vscode("workbench.view.extension.bookmarks")
