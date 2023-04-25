@@ -148,7 +148,7 @@ punctuation_words = {
     "period": ".",
     "full stop": ".",
     "semicolon": ";",
-    "colon": ":",
+    "stack": ":",
     "forward slash": "/",
     "question mark": "?",
     "exclamation mark": "!",
@@ -168,6 +168,7 @@ punctuation_words = {
     "left paren": "(",
     "R paren": ")",
     "right paren": ")",
+    "close paren": ")",
 }
 symbol_key_words = {
     "dot": ".",
@@ -180,6 +181,7 @@ symbol_key_words = {
     "square": "[",
     "R square": "]",
     "right square": "]",
+    "close square": "]",
     "slash": "/",
     "backslash": "\\",
     "minus": "-",
@@ -199,6 +201,7 @@ symbol_key_words = {
     "left bracket": "{",
     "r brace": "}",
     "right brace": "}",
+    "close brace": "}",
     "r brack": "}",
     "r bracket": "}",
     "right bracket": "}",
