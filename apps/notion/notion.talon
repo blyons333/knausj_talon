@@ -1,0 +1,53 @@
+os: mac
+and app.bundle: notion.id
+-
+# Popular
+go back: key(cmd-[)
+go forward: key(cmd-])
+page new: key(cmd-n)
+page open: key(cmd-p)
+page link: insert("[[")
+window new: key(cmd-shift-n)
+tab new: key(cmd-t)
+tab last: key(cmd-alt-left)
+tab next: key(cmd-alt-right)
+tab close: key(cmd-w)
+data last: key(cmd-shift-k)
+data next: key(cmd-shift-j)
+
+# Styling
+add line: key(shift-enter)
+bold that: key(cmd-b)
+italic that: key(cmd-i)
+underline that: key(cmd-u)
+strike that: key(cmd-shift-s)
+link that: key(cmd-k)
+code that: key(cmd-e)
+indent that: key(tab)
+dedent that: key(shift-tab)
+dupe that: key(cmd-d)
+change that: key(cmd-/)
+check that: key(cmd-enter)
+fold that: key(cmd-enter)
+
+make comment: key(cmd-shift-m)
+make line: insert("---")
+make text: key(cmd-alt-0)
+make one: key(cmd-alt-1)
+make two: key(cmd-alt-2)
+make three: key(cmd-alt-3)
+make check: key(cmd-alt-4)
+make bullet: key(cmd-alt-5)
+make number: key(cmd-alt-6)
+make toggle: key(cmd-alt-7)
+make code: key(cmd-alt-8)
+make page: key(cmd-alt-9)
+
+# Navigation
+page up: key(cmd-shift-u)
+page down: key(cmd-enter)
+block select last: key(shift-up)
+block select next: key(shift-down)
+block move up: key(cmd-shift-up)
+block move down: key(cmd-shift-down)
+toggle fold: key(cmd-alt-t)
