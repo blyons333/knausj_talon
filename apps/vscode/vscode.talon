@@ -126,6 +126,7 @@ whitespace trim: user.vscode("editor.action.trimTrailingWhitespace")
 language switch: user.vscode("workbench.action.editor.changeLanguageMode")
 refactor rename: user.vscode("editor.action.rename")
 refactor this: user.vscode("editor.action.refactor")
+comment that: user.vscode("editor.action.commentLine")
 
 #code navigation
 (go declaration | follow): user.vscode("editor.action.revealDefinition")
@@ -149,10 +150,16 @@ go line <user.number_string>:
     key(enter)
 
 # Bookmarks. Requires Bookmarks plugin
-go marks: user.vscode("workbench.view.extension.bookmarks")
-toggle mark: user.vscode("bookmarks.toggle")
-go next mark: user.vscode("bookmarks.jumpToNext")
-go last mark: user.vscode("bookmarks.jumpToPrevious")
+bar mark: user.vscode("workbench.view.extension.bookmarks")
+mark list: user.vscode("bookmarks.list")
+mark list all: user.vscode("bookmarks.listFromAllFiles")
+mark toggle: user.vscode("bookmarks.toggle")
+mark label: user.vscode("bookmarks.toggleLabeled")
+mark next: user.vscode("bookmarks.jumpToNext")
+mark last: user.vscode("bookmarks.jumpToPrevious")
+mark clear: user.vscode("bookmarks.clear")
+mark clear all: user.vscode("bookmarks.clearFromAllFiles")
+
 
 close other tabs: user.vscode("workbench.action.closeOtherEditors")
 close all tabs: user.vscode("workbench.action.closeAllEditors")
@@ -161,6 +168,11 @@ close tabs way left: user.vscode("workbench.action.closeEditorsToTheLeft")
 tab keep: user.vscode("workbench.action.keepEditor")
 tab move next: user.vscode("workbench.action.moveEditorRightInGroup")
 tab move last: user.vscode("workbench.action.moveEditorLeftInGroup")
+tab split: user.vscode("workbench.action.splitEditor")
+tab group one: key("cmd-1")
+tab group two: key("cmd-2")
+tab move group next: user.vscode("workbench.action.moveEditorToNextGroup")
+tab move group last: user.vscode("workbench.action.moveEditorToPreviousGroup")
 
 # Folding
 fold that: user.vscode("editor.fold")

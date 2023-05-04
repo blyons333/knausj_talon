@@ -14,6 +14,12 @@ clear screen: user.terminal_clear_screen()
 run last: user.terminal_run_last()
 rerun [<user.text>]: user.terminal_rerun_search(text or "")
 rerun search: user.terminal_rerun_search("")
+exit: key(ctrl-d)
+exit all:
+    key(ctrl-d)
+    insert("y")
+    key(enter)
+kill: key(ctrl-c)
 kill all: user.terminal_kill_all()
 
 copy paste:

@@ -18,11 +18,11 @@ go line start: edit.line_start()
 
 go line end: edit.line_end()
 
-go way left:
-    edit.line_start()
-    edit.line_start()
+# go way left:
+#    edit.line_start()
+#    edit.line_start()
 
-go way right: edit.line_end()
+# go way right: edit.line_end()
 
 go way down: edit.file_end()
 
