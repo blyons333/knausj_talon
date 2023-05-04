@@ -17,3 +17,7 @@ mode: all
 ^drowse$: speech.disable()
 ^(talon wake)+$: speech.enable()
 ^rise$: speech.enable()
+^snooze$:
+    speech.disable()
+    sleep(30s)
+    speech.enable()
