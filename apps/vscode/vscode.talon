@@ -228,12 +228,12 @@ pull request: user.vscode("pr.create")
 # action: https://code.visualstudio.com/api/references/when-clause-contexts
 change next: key(alt-f5)
 change last: key(shift-alt-f5)
-github open: user.vscode("openInGithub.openInGitHubFile")
-github blame: user.vscode("openInGithub.openInGitHubBlame")
-github history: user.vscode("openInGithub.openInGitHubHistory")
-github copy open: user.vscode("openInGithub.copyInGitHubFile")
-github copy blame: user.vscode("openInGithub.copyInGitHubBlame")
-github copy history: user.vscode("openInGithub.copyInGitHubHistory")
+hub open: user.vscode("openInGithub.openInGitHubFile")
+hub blame: user.vscode("openInGithub.openInGitHubBlame")
+hub history: user.vscode("openInGithub.openInGitHubHistory")
+hub copy open: user.vscode("openInGithub.copyInGitHubFile")
+hub copy blame: user.vscode("openInGithub.copyInGitHubBlame")
+hub copy history: user.vscode("openInGithub.copyInGitHubHistory")
 
 # Testing
 test run: user.vscode("testing.runAtCursor")
