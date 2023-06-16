@@ -318,7 +318,7 @@ replace here:
     user.replace("")
     key(cmd-alt-l)
 
-hover show: user.vscode("editor.action.showHover")
+hover that: user.vscode("editor.action.showHover")
 
 join lines: user.vscode("editor.action.joinLines")
 
