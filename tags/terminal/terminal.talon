@@ -27,10 +27,9 @@ dev stop E B A:
     # File basket inbox
     user.tab_close_wrapper()
     # shell_plus
-    key(ctrl-d)
-    insert("y")
+    insert("exit")
     key(enter)
-    sleep(3000ms)
+    sleep(4000ms)
     user.tab_close_wrapper()
     # psql
     key(ctrl-d)
@@ -38,7 +37,7 @@ dev stop E B A:
     user.tab_close_wrapper()
     # celery beat
     key(ctrl-c)
-    sleep(3000ms)
+    sleep(5000ms)
     user.tab_close_wrapper()
     # celery analytics
     key(ctrl-c)
@@ -52,6 +51,36 @@ dev stop E B A:
     key(ctrl-c)
     sleep(5000ms)
     user.tab_close_wrapper()
+
+activate E B A:
+    insert("conda activate eba")
+    key(enter)
+
+activate M M C:
+    insert("workon .")
+    key(enter)
+
+activate box:
+    insert("source venv/bin/activate")
+    key(enter)
+
+re start services:
+    insert("sudo supervisorctl restart all")
+
+postgres E B A:
+    insert("psql eba")
+
+postgres M M C:
+    insert("psql mmc")
+
+query select all:
+    insert("SELECT * FROM ")
+
+query where:
+    insert(" WHERE ")
+
+query group by:
+    insert(" GROUP BY ")
 
 copy paste:
     edit.copy()
