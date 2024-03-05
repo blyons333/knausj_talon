@@ -29,7 +29,7 @@ dev stop E B A:
     # shell_plus
     insert("exit")
     key(enter)
-    sleep(4000ms)
+    sleep(5000ms)
     user.tab_close_wrapper()
     # psql
     key(ctrl-d)
@@ -52,6 +52,22 @@ dev stop E B A:
     sleep(5000ms)
     user.tab_close_wrapper()
 
+dev stop M M C:
+    # Code folder
+    user.tab_close_wrapper()
+    # shell_plus
+    insert("exit")
+    key(enter)
+    sleep(5000ms)
+    # psql
+    key(ctrl-d)
+    sleep(3000ms)
+    user.tab_close_wrapper()
+    # server
+    key(ctrl-c)
+    sleep(5000ms)
+    user.tab_close_wrapper()
+
 activate E B A:
     insert("conda activate eba")
     key(enter)
@@ -63,6 +79,9 @@ activate M M C:
 activate box:
     insert("source venv/bin/activate")
     key(enter)
+
+activate shell:
+    insert("./manage.py shell_plus")
 
 re start services:
     insert("sudo supervisorctl restart all")
