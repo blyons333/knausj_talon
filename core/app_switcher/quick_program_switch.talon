@@ -1,10 +1,10 @@
 os: mac
 -
-slacker: user.switcher_focus("slack")
-coder: user.switcher_focus("code")
-browser: user.switcher_focus("chrome")
-teamster: user.switcher_focus("teams")
-mailer: user.switcher_focus("outlook")
-commander: user.switcher_focus("terminal")
-tasker: user.switcher_focus("microsoft to do")
-noter: user.switcher_focus("microsoft one note")
+slacker: user.switcher_focus("Slack")
+coder: user.switcher_focus("Code")
+browser: user.switcher_focus("Google Chrome")
+teamster: user.switcher_focus("Microsoft Teams")
+mailer: user.switcher_focus("Microsoft Outlook")
+commander: user.switcher_focus("Terminal")
+tasker: user.switcher_focus("Microsoft To Do")
+noter: user.switcher_focus("Microsoft OneNote")
