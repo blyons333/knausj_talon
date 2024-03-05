@@ -9,9 +9,7 @@ def setup_default_alphabet():
     no need to modify this here, change your alphabet using alphabet.csv"""
     initial_default_alphabet = "air bat cap drum each fine gust harp sit jury crunch look made near odd pit quench red sun trap urge vest whale plex yank zip".split()
     initial_letters_string = "abcdefghijklmnopqrstuvwxyz"
-    initial_default_alphabet_dict = dict(
-        zip(initial_default_alphabet, initial_letters_string)
-    )
+    initial_default_alphabet_dict = dict(zip(initial_default_alphabet, initial_letters_string))
 
     return initial_default_alphabet_dict
 
@@ -177,10 +175,16 @@ symbol_key_words = {
     "apostrophe": "'",
     "L square": "[",
     "left square": "[",
+    "brack": "[",
+    "bracket": "[",
+    "left bracket": "[",
     "square": "[",
     "R square": "]",
     "right square": "]",
     "close square": "]",
+    "r brack": "]",
+    "r bracket": "]",
+    "right bracket": "]",
     "slash": "/",
     "backslash": "\\",
     "minus": "-",
@@ -195,15 +199,16 @@ symbol_key_words = {
     "paren": "(",
     "brace": "{",
     "left brace": "{",
-    "brack": "{",
-    "bracket": "{",
-    "left bracket": "{",
+    "curly bracket": "{",
+    "left curly bracket": "{",
     "r brace": "}",
     "right brace": "}",
     "close brace": "}",
     "r brack": "}",
     "r bracket": "}",
     "right bracket": "}",
+    "r curly bracket": "}",
+    "right curly bracket": "}",
     "angle": "<",
     "left angle": "<",
     "less than": "<",
@@ -265,9 +270,7 @@ if app.platform in ("windows", "linux"):
 special_keys = {k: k for k in simple_keys}
 special_keys.update(alternate_keys)
 ctx.lists["self.special_key"] = special_keys
-ctx.lists["self.function_key"] = {
-    f"F {name}": f"f{i}" for i, name in enumerate(f_digits, start=1)
-}
+ctx.lists["self.function_key"] = {f"F {name}": f"f{i}" for i, name in enumerate(f_digits, start=1)}
 
 
 @mod.action_class
